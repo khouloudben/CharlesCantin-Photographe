@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Galerie de photos de portrait </title>
+</head>
+<body  style="margin:0;">
+  <nav class="nav;">
+    <ul >
+      <img src="images/logo2.jpg" alt="Logo" style="width: 150px; height: 130px;">
+      <li class="nav-item"><a href="acceuil.html">Acceuil</a></li>
+      <li class="nav-item"><a href="galerie.html">Galerie</a></li>
+      <li class="nav-item"><a href="tarifs.html">Tarifs et Prestations</a></li>
+      <li class="nav-item"><a href="contact.html">Contact</a></li>
+      <div style="margin-left:  45%;">
+     
+        <a href="https://www.facebook.com/"></a><img src="images/facebook.png" alt="iconface"></a>
+        <a href="https://www.messenger.com/"></a><img src="images/messenger.png" alt="icontel" ></a>
+        <a href="https://www.instagram.com/"></a><img src="images/instagram.png" alt="iconinsta"></a>
+        <a href="Email:photographecharlescantin@gmail.com"> <img src="images/mail.png" alt="icontel" ></a>
+        <a href="tel:https://www.tiktok.com/"></a><img src="images/tik-tok.png" alt="icontel" ></a>
+        <a href="tel:+33176549183"><img src="images/phone-call.png" alt="icontel" ></a>
+        <a href="tel:+33176549183"style="color:#f2f2f2;">01 76 54 91 83</a>
+    </div>
+    </ul>
+  </nav>
+<div class="container">
+    <!-- box category offer -->
+     <div class="title-section"style="width: 100%;  text-align: center;">
+        <h2 class="text-xs weight-bold">Juste moi</h2>
+         <p>Frais de déplacements inclus. Séance en extérieur ou à domicile (au choix) </p>
+     </div>
+
+    <div class="offers-wrapper padding-section--normal">
+
+      <div class="offer-card mh">
+        <img class="lazy img-responsive" src="images/portrait.jpg"  alt="Offre 30 min de présence (en continu) portrait - Photos">
+                <hr>
+                <h3>45mns</h3>
+                <p>10 photos numériques retouchées </p>                                                                                                                                                                                                                                                                <hr>
+                <p><strong>80€ HT  (100€ TTC)</strong></p>
+                <p class="padding-section--small">
+                    </p><form action="/shooting-photo-conciergerie/offre/74/0">
+                      <p class="text-center">
+                        <button type="button" class="btn btn-blue text-center"style="padding:5px;"  onclick="redirectToContact()">Nous contacter</button>
+                      </p>
+                    </form>
+        </div>
+        <div class="offer-card mh" >
+        <img class="lazy img-responsive" src="images/portrait6.jpg" alt="Offre 1h de présence (en continu) portrait - Photos">
+                <hr>
+                <h3>1h</h3>
+                <p>20 photos numériques retouchées </p>                                                                                                                                                                                                                                                                <hr>
+                <p>
+                <strong>100€ HT  (130€ TTC)</strong>
+                </p>
+                <p class="padding-section--small">
+                    </p><form action="/shooting-photo-conciergerie/offre/69/0">
+                      <p class="text-center">
+                        <button type="button" class="btn btn-blue text-center"style="padding:5px;"  onclick="redirectToContact()">Nous contacter</button>
+                      </p>
+                    </form>
+                <p></p>
+
+        </div>
+        <div class="offer-card mh">
+         <img class="lazy img-responsive" src="images/portrait7.jpg"  alt="Offre 1h30 de présence (en continu) portrait - Photos">
+                <hr>
+                <h3>1h30</h3>
+                <p>75 photos numériques retouchées </p>                                                                                                                                                                                                                                                                <hr>
+                <p>
+             <strong>130€ HT  (150€ TTC)</strong>
+                </p>
+                <p class="padding-section--small">
+                    </p><form action="/shooting-photo-conciergerie/offre/70/0">
+                      <p class="text-center">
+                        <button type="button" class="btn btn-blue text-center"style="padding:5px;" onclick="redirectToContact()">Nous contacter</button>
+                      </p>
+                    </form>
+                <p></p>
+
+     
+        
+        </div>
+    </div>
+</script>
+<script>
+   function redirectToContact() {
+  window.location.href = "contact.html";
+}
+      
+  </script>
+</body>
+</html>
+<style>
+    /* Style pour la navigation */
+    nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+nav li.nav-item {
+    
+  /* display: inline; */
+  color: #fff;
+}
+
+nav li.nav-item a {
+    
+  /* display: inline-block; */
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav li.nav-item a:hover {
+  background-color: #000000;
+}
+.nav {
+    display: flex;
+    justify-content: center; /* Aligner horizontalement au centre */
+    align-items: center; /* Aligner verticalement au centre */
+    height: 130px; /* Ajuster la hauteur du conteneur */
+  }
+  ul img{
+    margin-right: 10px;
+   }
+  ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    
+  }
+
+.link {
+      display: inline-block;
+      padding: 10px;
+      margin: 5px;
+      background-color: lightblue;
+      cursor: pointer;
+    }
+   .offer-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 5px solid black;
+  margin: 10px;
+  display: inline-block;
+    width: 200px;
+    height: 440px;
+    text-align: center;
+
+   
+}
+
+.offer-card img {
+  margin-bottom: 10px;
+  height: 105px;
+  width: 156px;
+  
+
+}
+
+
+
+.offer-card h3 {
+  margin-top: 10px;
+  font-size: 24px;
+  text-align: center;
+}
+h2{
+    text-align: center;   
+}
+
+.offer-card p {
+  margin: 10px 0;
+  text-align: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.offer-container {
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+ button{
+    margin: 40px;
+ }
+</style>

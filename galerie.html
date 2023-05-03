@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Galerie de photos</title>
+</head>
+<body  style="margin:0;">
+
+  <nav class="nav;">
+    <ul >
+      <img src="images/logo2.jpg" alt="Logo" style="width: 150px; height: 130px;">
+      <li class="nav-item"><a href="acceuil.html">Acceuil</a></li>
+      <li class="nav-item"><a href="galerie.html">Galerie</a></li>
+      <li class="nav-item"><a href="tarifs.html">Tarifs et Prestations</a></li>
+      <li class="nav-item"><a href="contact.html">Contact</a></li>
+      <div style="margin-left: 45%;">
+     
+        <a href="https://www.facebook.com/"></a><img src="images/facebook.png" alt="iconface"></a>
+        <a href="https://www.messenger.com/"></a><img src="images/messenger.png" alt="icontel" ></a>
+        <a href="https://www.instagram.com/"></a><img src="images/instagram.png" alt="iconinsta"></a>
+        <a href="Email:photographecharlescantin@gmail.com"> <img src="images/mail.png" alt="icontel" ></a>
+        <a href="tel:https://www.tiktok.com/"></a><img src="images/tik-tok.png" alt="icontel" ></a>
+        <a href="tel:+33176549183"><img src="images/phone-call.png" alt="icontel" ></a>
+        <a href="tel:+33176549183"style="color:#f2f2f2;">01 76 54 91 83</a>
+    </div>
+    </ul>
+  </nav>
+
+  
+
+
+  <h1>Galerie de photos</h1>
+ 
+      <section id="gallery">
+        <!-- Section pour afficher les images de la galerie
+        <div style="text-align: center;">
+            <ul style="display: flex; justify-content: center; align-items: center;">
+                <li style="flex: 0 0 450px; margin-right: 40px;color:black; font-weight: bold;"><a style="color:black;" href="#" onclick="filterPhotos('mariage')"><img style="height: 319.2px;"class="gallery-img mariage" src="images/mariage.jpg">Mariage</a></li>
+                <li style="flex: 0 0 450px; margin-right: 40px;"><a style="color:black; font-weight: bold;" href="#" onclick="filterPhotos('grossesse')"><img style="height: 319.2px;" class="gallery-img grossesse" src="images/Grossesse.jpg">Grossesse</a></li>
+                <li style="flex: 0 0 450px; margin-right: 40px;"><a style="color:black; font-weight: bold;" href="#" onclick="filterPhotos('bebe')"><img style="height: 319.2px;" class="gallery-img bebe" src="images/bebe.jpg">Bébé</a></li>
+            </ul>
+            <ul style="display: flex; justify-content: center; align-items: center;">
+                <li style="flex: 0 0 450px; margin-right: 40px;"><a style="color:black; font-weight: bold;" href="#" onclick="filterPhotos('famille')"><img style="height: 319.2px;" class="gallery-img famille" src="images/famille.jpg">Famille</a></li>
+                <li style="flex: 0 0 450px; margin-right: 40px;"><a style="color:black; font-weight: bold;" href="#" onclick="filterPhotos('bapteme')"><img style="height: 319.2px;" class="gallery-img bapteme" src="images/Baptême.jpg">Baptême</a></li>
+                <li style="flex: 0 0 450px; margin-right: 40px;"><a style="color:black; font-weight: bold;" href="#" onclick="filterPhotos('couple')"><img style="height: 319.2px;" class="gallery-img couple" src="images/couple.jpg">Couple</a></li>
+            </ul>
+            <ul style="display: flex; justify-content: center; align-items: center;">
+                <li style="flex: 0 0 450px; margin-right: 40px;"><a style="color:black; font-weight: bold;" href="#" onclick="filterPhotos('portrait')"><img style="height: 319.2px;" class="gallery-img portrait" src="images/portrait.jpg">Portrait</a></li>
+            </ul>
+        </div> -->
+
+        <div style="text-align: center;">
+          <ul style="display: flex; justify-content: center; align-items: center;">
+            <li style="flex: 0 0 450px; margin-right: 40px;color:black; font-weight: bold; position: relative;">
+              <a style="color:black; display: block; position: relative;" href="#" onclick="filterPhotos('mariage')">
+                <img style="height: 319.2px;"class="gallery-img mariage" src="images/mariage.jpg">
+                <h3 style="color: white; font-weight: bold; text-align: center; position: absolute; top: 50%; transform: translateY(-50%); width: 100%; margin: 0;">Mariage</h3>
+               
+              </a>
+            </li>
+            
+              <li style="flex: 0 0 450px; margin-right: 40px;color:black; font-weight: bold; position: relative;">
+                <a style="color:black; display: block; position: relative;" href="#" onclick="filterPhotos('grossesse')">
+                  <img style="height: 319.2px;" class="gallery-img grossesse" src="images/Grossesse.jpg">
+                  <h3 style="color: white; font-weight: bold; text-align: center; position: absolute; top: 50%; transform: translateY(-50%); width: 100%; margin: 0;">Grossesse</h3>
+                 </a></li>
+              <li style="flex: 0 0 450px; margin-right: 40px;color:black; font-weight: bold; position: relative;">
+                <a style="color:black; display: block; position: relative;" href="#" onclick="filterPhotos('bebe')">
+                  <img style="height: 319.2px;" class="gallery-img bebe" src="images/bebe.jpg">
+                  <h3 style="color:white; font-weight: bold; text-align: center; position: absolute; top: 50%; transform: translateY(-50%); width: 100%; margin: 0;">Bébé</h3>
+                 
+                </a></li>
+          </ul>
+          <ul style="display: flex; justify-content: center; align-items: center;">
+              <li style="flex: 0 0 450px; margin-right: 40px;color:black; font-weight: bold; position: relative;">
+                <a style="color:black; display: block; position: relative;" href="#" onclick="filterPhotos('famille')">
+                  <img style="height: 319.2px;" class="gallery-img famille" src="images/famille.jpg">
+                  <h3 style="color: white; font-weight: bold; text-align: center; position: absolute; top: 50%; transform: translateY(-50%); width: 100%; margin: 0;">Famille</h3>
+                  
+                </a></li>
+              <li style="flex: 0 0 450px; margin-right: 40px;color:black; font-weight: bold; position: relative;">
+                <a style="color:black; display: block; position: relative;" href="#" onclick="filterPhotos('bapteme')">
+                  <img style="height: 319.2px;" class="gallery-img bapteme" src="images/Baptême.jpg">
+                  <h3 style="color: white; font-weight: bold; text-align: center; position: absolute; top: 50%; transform: translateY(-50%); width: 100%; margin: 0;">Baptême</h3>
+                
+                </a></li>
+              <li style="flex: 0 0 450px; margin-right: 40px;color:black; font-weight: bold; position: relative;">
+                <a  style="color:black; display: block; position: relative;"href="#" onclick="filterPhotos('couple')"><img style="height: 319.2px;" class="gallery-img couple" src="images/couple.jpg">
+                  <h3 style="color: white; font-weight: bold; text-align: center; position: absolute; top: 50%; transform: translateY(-50%); width: 100%; margin: 0;">Couple</h3>
+                 
+                </a></li>
+          </ul>
+          <ul style="display: flex; justify-content: center; align-items: center;">
+              <li style="flex: 0 0 450px; margin-right: 40px;color:black; font-weight: bold; position: relative;">
+                <a style="color:black; display: block; position: relative;" href="#" onclick="filterPhotos('portrait')">
+                  <img style="height: 319.2px;" class="gallery-img portrait" src="images/portrait.jpg">
+                  <h3 style="color: white; font-weight: bold; text-align: center; position: absolute; top: 50%; transform: translateY(-50%); width: 100%; margin: 0;">Portrait</h3>
+                  
+                </a></li>
+          </ul>
+      </div>
+    </section>
+ 
+ <script>
+  // Fonction pour filtrer les photos en fonction de la catégorie choisie
+  function filterPhotos(category) {
+    const images = document.getElementsByClassName('gallery-img');
+    if (category === 'all') {
+      // Afficher toutes les images si la catégorie choisie est 'toutes'
+      for (let i = 0; i < images.length; i++) {
+        images[i].style.display = 'block';
+        let parentLink = images[i].parentNode;
+        if (parentLink.tagName === 'A') {
+          parentLink.style.display = 'block';
+        }
+      }
+    } else {
+      // Cacher les images et leurs liens qui ne correspondent pas à la catégorie choisie
+      for (let i = 0; i < images.length; i++) {
+        if (!images[i].classList.contains(category)) {
+          images[i].style.display = 'none';
+          let parentLink = images[i].parentNode;
+          if (parentLink.tagName === 'A') {
+            parentLink.style.display = 'none';
+            // Mettre à jour le lien du parent avec la catégorie choisie
+            parentLink.href = category + '.html';
+          }
+        } else {
+          images[i].style.display = 'block';
+          let parentLink = images[i].parentNode;
+          if (parentLink.tagName === 'A') {
+            parentLink.style.display = 'block';
+            // Mettre à jour le lien du parent avec la catégorie choisie
+            parentLink.href = category + '.html';
+            // parentLink.href = 'category.html';
+          }
+        }
+      }
+    }
+  }
+</script>
+</body>
+</html>
+
+<style>
+ h1{
+  margin-left: 8px;  
+}
+h3:hover{
+  font-size: 50px;  
+}
+.gallery-img:hover + h3 {
+font-size: 50px;
+
+}
+  
+    /* Style pour les images de la galerie */
+    .gallery-img {
+  object-fit: cover;
+  margin: 10px;
+  border: 10px solid black;
+    }
+
+/* Style pour la section de la galerie */
+#gallery ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Style pour les images de la galerie */
+#gallery ul li img {
+  width: 100%;
+  height: 100%;
+
+}
+
+/* Style pour les images de la galerie au survol */
+#gallery ul li:hover img {
+  transform: scale(1.1);
+}
+
+ /* Style pour la navigation */
+ nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+nav li.nav-item {
+    
+  /* display: inline; */
+  color: #fff;
+}
+
+nav li.nav-item a {
+    
+  /* display: inline-block; */
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav li.nav-item a:hover {
+  background-color: #000000;
+}
+.nav {
+    display: flex;
+    justify-content: center; /* Aligner horizontalement au centre */
+    align-items: center; /* Aligner verticalement au centre */
+    height: 130px; /* Ajuster la hauteur du conteneur */
+   
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    
+  }
+  /* .nav-item{
+    margin-left: auto;
+  } */
+  ul img {
+    margin-right: 10px; /* Espacement entre le logo et les liens */
+  }
+.link {
+      display: inline-block;
+      padding: 10px;
+      margin: 5px;
+      background-color: lightblue;
+      cursor: pointer;
+    }
+</style>
+

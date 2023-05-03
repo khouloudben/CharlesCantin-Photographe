@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Galerie de photos de couple </title>
+</head>
+<body  style="margin:0;background-color: black;">
+  <nav class="nav;">
+    <ul >
+      <img src="images/logo2.jpg" alt="Logo" style="width: 150px; height: 130px;">
+      <li class="nav-item"><a href="acceuil.html">Acceuil</a></li>
+      <li class="nav-item"><a href="galerie.html">Galerie</a></li>
+      <li class="nav-item"><a href="tarifs.html">Tarifs et Prestations</a></li>
+      <li class="nav-item"><a href="contact.html">Contact</a></li>
+      <div style="margin-left:  45%;;">
+     
+        <a href="https://www.facebook.com/"></a><img src="images/facebook.png" alt="iconface"></a>
+        <a href="https://www.messenger.com/"></a><img src="images/messenger.png" alt="icontel" ></a>
+        <a href="https://www.instagram.com/"></a><img src="images/instagram.png" alt="iconinsta"></a>
+        <a href="Email:photographecharlescantin@gmail.com"> <img src="images/mail.png" alt="icontel" ></a>
+        <a href="tel:https://www.tiktok.com/"></a><img src="images/tik-tok.png" alt="icontel" ></a>
+        <a href="tel:+33176549183"><img src="images/phone-call.png" alt="icontel" ></a>
+        <a href="tel:+33176549183"style="color:#f2f2f2;">01 76 54 91 83</a>
+    </div>
+    </ul>
+  </nav>
+  <div style="padding: 10px;;background-color:white;">
+  <h1>Les photos des couples</h1>
+ </div>
+    <!-- Liens pour filtrer les catégories de photos -->
+    <ul style="list-style-type: none; padding: 0;">
+      <li style="display: inline;  margin-left: 8px;"><a href="galerie.html"><button>Toutes</button></a></li>
+      <li style="display: inline;  margin-left: 8px;"><a href="mariage.html"><button>Mariage</button></a></li>
+      <li style="display: inline; margin-right: 8px; margin-left: 8px;"><a href="grossesse.html"><button>Grossesse</button></a></li>
+      <li style="display: inline; "><a href="bebe.html"><button>Bébé</button></a></li>
+      <li style="display: inline; margin-right: 8px; margin-left: 8px;"><a href="famille.html"><button>Famille</button></a></li>
+      <li style="display: inline; "><a href="bapteme.html"><button>Baptême</button></a></li>
+      <li style="display: inline; margin-right: 8px; margin-left: 8px;"><a href="couple.html"><button class="categorychoisie-btn">Couple</button></a></li>
+      <li style="display: inline; "><a href="portrait.html"><button>Portrait</button></a></li>
+    </ul>
+ 
+  <section id="gallery">
+    <!-- Section pour afficher les images de la galerie -->
+    <div class="gallery-container">
+      <div class="gallery-column">
+        <img class="gallery-img couple" src="images/couple.jpg">
+        <img class="gallery-img couple" src="images/couple2.jpg">
+        <img class="gallery-img couple" src="images/couple3.jpg">
+        <img class="gallery-img couple" src="images/couple4.jpg">
+        <img class="gallery-img couple" src="images/couple5.jpg">
+      </div>
+      <div class="gallery-column">
+        <img class="gallery-img couple" src="images/couple6.jpg">
+        <img class="gallery-img couple" src="images/couple7.jpg">
+        <img class="gallery-img couple" src="images/couple8.jpg">
+        <img class="gallery-img couple" src="images/couple9.jpg">
+        <img class="gallery-img couple" src="images/couple11.jpg">
+      </div>
+      <div class="gallery-column">
+        <img class="gallery-img couple" src="images/couple12.jpg">
+        <img class="gallery-img couple" src="images/couple13.jpg">
+        <img class="gallery-img couple" src="images/couple14.jpg">
+        <img class="gallery-img couple" src="images/couple15.jpg">
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Fonction pour filtrer les photos en fonction de la catégorie choisie
+  function filterPhotos(category) {
+    const images = document.getElementsByClassName('gallery-img');
+    if (category === 'all') {
+      // Afficher toutes les images si la catégorie choisie est 'toutes'
+      for (let i = 0; i < images.length; i++) {
+        images[i].style.display = 'block';
+        let parentLink = images[i].parentNode;
+        if (parentLink.tagName === 'A') {
+          parentLink.style.display = 'block';
+        }
+      }
+   
+        } else {
+          images[i].style.display = 'block';
+          let parentLink = images[i].parentNode;
+          if (parentLink.tagName === 'A') {
+            parentLink.style.display = 'block';
+            // Mettre à jour le lien du parent avec la catégorie choisie
+            parentLink.href = category + '.html';
+            // parentLink.href = 'category.html';
+          }
+        }
+      }
+  </script>
+</body>
+</html>
+<style>
+    h1{
+      color:#000000;
+  margin-left: 8px;  
+}
+
+    #gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+   
+    .gallery-img {
+      flex-basis: 25%;
+      max-width: 100%;
+      height: auto;
+      width: 100%;
+      margin: 8px; 
+    }
+
+    .gallery-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .gallery-column {
+      flex-basis: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 8px; 
+    }
+    /* Style pour la navigation */
+    nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+nav li.nav-item {
+    
+  /* display: inline; */
+  color: #fff;
+}
+
+nav li.nav-item a {
+    
+  /* display: inline-block; */
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav li.nav-item a:hover {
+  background-color: #000000;
+}
+.nav {
+    display: flex;
+    justify-content: center; /* Aligner horizontalement au centre */
+    align-items: center; /* Aligner verticalement au centre */
+    height: 130px; /* Ajuster la hauteur du conteneur */
+  }
+  ul img{
+    margin-right: 10px;
+   }
+  ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    
+  }
+
+.link {
+      display: inline-block;
+      padding: 10px;
+      margin: 5px;
+      background-color: lightblue;
+      cursor: pointer;
+    }
+    .categorychoisie-btn {
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: #F0F0F0;
+  color: black;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+  </style>

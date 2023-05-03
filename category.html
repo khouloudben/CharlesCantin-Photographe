@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Galerie de photos de category </title>
+</head>
+<body  style="margin:0;background-color: black;">
+  <nav class="nav;">
+    <ul >
+      <img src="images/logo2.jpg" alt="Logo" style="width: 150px; height: 130px;">
+      <li class="nav-item"><a href="galerie.html">Galerie</a></li>
+      <li class="nav-item"><a href="tarifs.html">Tarifs et Prestations</a></li>
+      <li class="nav-item"><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h1>Galerie de photos</h1>
+ 
+  <ul style="list-style-type: none; padding: 0;">
+    <li style="display: inline; list-style-type: none;"><button onclick="filterPhotos('all')">Toutes</button></li>
+    <li style="display: inline;"><button onclick="filterPhotos('category')">category</button></li>
+    <li style="display: inline;"><button onclick="filterPhotos('grossesse')">Grossesse</button></li>
+    <li style="display: inline; list-style-type: none;"><button onclick="filterPhotos('bebe')">Bébé</button></li>
+    <li style="display: inline;"><button onclick="filterPhotos('famille')">Famille</button></li>
+    <li style="display: inline;"><button onclick="filterPhotos('bapteme')">Baptême</button></li>
+    <li style="display: inline;"><button onclick="filterPhotos('couple')">Couple</button></li>
+  </ul>
+      
+ 
+  <section id="gallery">
+    <!-- Section pour afficher les images de la galerie -->
+    <div class="gallery-container">
+      <div class="gallery-column">
+        <img class="gallery-img category" src="images/mariage.jpg" data-category="mariage">
+        <img class="gallery-img category" src="images/mariage2.jpg" data-category="category">
+        <img class="gallery-img category" src="images/category3.jpg" data-category="category">
+        <img class="gallery-img category" src="images/category4.jpg" data-category="category">
+        <img class="gallery-img category" src="images/category5.jpg" data-category="category">
+      </div>
+      <div class="gallery-column">
+        <img class="gallery-img category" src="images/category6.jpg" data-category="category6">
+        <img class="gallery-img category" src="images/category7.jpg" data-category="category7">
+        <img class="gallery-img category" src="images/category8.jpg" data-category="category8">
+        <img class="gallery-img category" src="images/category9.jpg" data-category="category9">
+        <img class="gallery-img category" src="images/category11.jpg" data-category="category10">
+      </div>
+      <div class="gallery-column">
+        <img class="gallery-img category" src="images/category12.jpg" data-category="category11">
+        <img class="gallery-img category" src="images/category13.jpg" data-category="category12">
+        <img class="gallery-img category" src="images/category14.jpg" data-category="category13">
+        <img class="gallery-img category" src="images/category15.jpg" data-category="category14">
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+  // Remplacez 'categoryChoisie' par la catégorie choisie
+var categoryChoisie = "categoryNouvelle";
+
+// Sélectionne tous les éléments 'img' avec la classe 'category'
+var images = document.getElementsByClassName('category');
+
+// Parcourt tous les éléments 'img' et modifie leur attribut 'data-category'
+for (var i = 0; i < images.length; i++) {
+  images[i].setAttribute('data-category', categoryChoisie);
+  // Remplacez 'src' par le chemin de l'image correspondant à la catégorie choisie
+  images[i].src = 'images/' + categoryChoisie + '.jpg';
+}
+
+  </script>
+
+</body>
+</html>
+<style>
+    /* body {
+        margin: 0;
+        overflow: hidden;
+    } */
+
+    #gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+   
+    .gallery-img {
+      flex-basis: 25%;
+      max-width: 100%;
+      height: auto;
+      width: 100%;
+      margin: 8px; 
+    }
+
+    .gallery-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .gallery-column {
+      flex-basis: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 8px; 
+    }
+    /* Style pour la navigation */
+    nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+}
+
+nav li.nav-item {
+    
+  /* display: inline; */
+  color: #fff;
+}
+
+nav li.nav-item a {
+    
+  /* display: inline-block; */
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav li.nav-item a:hover {
+  background-color: #000000;
+}
+.nav {
+    display: flex;
+    justify-content: center; /* Aligner horizontalement au centre */
+    align-items: center; /* Aligner verticalement au centre */
+    height: 130px; /* Ajuster la hauteur du conteneur */
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    
+  }
+
+.link {
+      display: inline-block;
+      padding: 10px;
+      margin: 5px;
+      background-color: lightblue;
+      cursor: pointer;
+    }
+  </style>
